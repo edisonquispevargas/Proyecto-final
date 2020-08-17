@@ -79,7 +79,7 @@
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small>Agregar Producto</small></h1>
+              <h1 class="all-tittles">Sistema de Almacen<small>   Agregar Nuevo Producto</small></h1>
             </div>
             aqui va todo el codigo
             
