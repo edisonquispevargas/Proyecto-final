@@ -44,7 +44,7 @@
                     <li>
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-store"></i>&nbsp;&nbsp; Articulos <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href=""><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevos Articulos</a></li>
+                            <li><a href="nuevoProducto.php"><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevos Articulos</a></li>
                             <li><a href=""><i class="zmdi zmdi-collection-text"></i>&nbsp;&nbsp; Listado de Articulos</a></li>
                             <li><a href=""><i class="zmdi zmdi-money"></i>&nbsp;&nbsp; Agregar Precio a Articulos</a></li>
                             <li><a href=""><i class="zmdi zmdi-money-box"></i>&nbsp;&nbsp; Listado de Articulos con su Precio</a></li>
