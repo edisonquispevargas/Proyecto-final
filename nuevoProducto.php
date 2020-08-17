@@ -42,12 +42,12 @@
                 <ul class="list-unstyled">
                     <li><a href="inicio.php"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Inicio</a></li>
                     <li>
-                        <div class="dropdown-menu-button"><i class="zmdi zmdi-store"></i>&nbsp;&nbsp; Articulos <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-store"></i>&nbsp;&nbsp; Productos <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href=""><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevos Articulos</a></li>
-                            <li><a href=""><i class="zmdi zmdi-collection-text"></i>&nbsp;&nbsp; Listado de Articulos</a></li>
-                            <li><a href=""><i class="zmdi zmdi-money"></i>&nbsp;&nbsp; Agregar Precio a Articulos</a></li>
-                            <li><a href=""><i class="zmdi zmdi-money-box"></i>&nbsp;&nbsp; Listado de Articulos con su Precio</a></li>
+                            <li><a href=""><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevo Producto</a></li>
+                            <li><a href=""><i class="zmdi zmdi-collection-text"></i>&nbsp;&nbsp; Listado de Productos</a></li>
+                            <li><a href=""><i class="zmdi zmdi-money"></i>&nbsp;&nbsp; Agregar Precio a Productos</a></li>
+                            <li><a href=""><i class="zmdi zmdi-money-box"></i>&nbsp;&nbsp; Listado de Productos con su Precio</a></li>
                         </ul>
                     </li>
                     <li>
