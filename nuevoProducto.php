@@ -36,8 +36,8 @@ include('link.php');
                     <li>
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-store"></i>&nbsp;&nbsp; Productos <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href=""><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevo Producto</a></li>
-                            <li><a href=""><i class="zmdi zmdi-collection-text"></i>&nbsp;&nbsp; Listado de Productos</a></li>
+                            <li><a href="nuevoProducto.php"><i class="zmdi zmdi-collection-plus"></i>&nbsp;&nbsp; Agregar Nuevo Producto</a></li>
+                            <li><a href="mostrarPro.php"><i class="zmdi zmdi-collection-text"></i>&nbsp;&nbsp; Listado de Productos</a></li>
                             <li><a href=""><i class="zmdi zmdi-money"></i>&nbsp;&nbsp; Agregar Precio a Productos</a></li>
                             <li><a href=""><i class="zmdi zmdi-money-box"></i>&nbsp;&nbsp; Listado de Productos con su Precio</a></li>
                         </ul>
@@ -71,9 +71,64 @@ include('link.php');
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small>   Agregar Nuevo Producto</small></h1>
+              <h1 class="all-tittles">Sistema de Almacen<small></small></h1>
             </div>
-            aqui va todo el codigo
+            <div class="edi">
+                <div class="row">
+				<h3 style="text-align:center">AGREGRAR NUEVO PRODUCTO</h3>
+			</div>
+             	<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
+             	<div class="col-sm-10">
+				<div class="form-group">
+					<label for="titulo" class="">Nombre del Producto</label>
+						<input type="text" class="form-control" id="nombre" name="titulo"
+						  required='required' title="Solamente números y guiones, 10 dígitos">
+					
+				</div>
+				<div class="form-group">
+					<label for="titulo" class="">Cantidad</label>
+						<input type="text" class="form-control" id="nombre" name="titulo"
+						  required='required' title="Solamente números y guiones, 10 dígitos">
+					
+				</div>
+				<div class="form-group">
+					<label for="titulo" class="">Precio Total</label>
+						<input type="text" class="form-control" id="nombre" name="titulo"
+						  required='required' title="Solamente números y guiones, 10 dígitos">
+					
+				</div>
+				
+				<div class="form-group">
+					<label for="fecha" class="">fecha</label>
+				       <input type="date" class="form-control" name="fecha" required='required' title="Solamente números y guiones, 10 dígitos">
+					
+				</div>
+				<div class="form-group">
+					<label for="titulo" class="">Proveedor</label>
+						<input type="text" class="form-control" id="nombre" name="titulo"
+				        required='required' title="Solamente números y guiones, 10 dígitos">
+					
+				</div>
+				
+				<div class="form-group">
+					<label for="descripcion" class="">Descripcion</label>
+					
+					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario"></textarea>
+						
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-5">
+						<a href="inicio.php" class="btn btn-default">Regresar</a>
+						<button type="submit" class="btn btn-success">Guardar</button>
+					</div>
+				</div>
+			</form>
+            
+            
+            </div>
+            
             
         </div>
         <section class="full-reset text-center" style="padding: 40px 0;">         
