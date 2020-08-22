@@ -113,7 +113,7 @@ include('link.php');
 				<div class="form-group">
 					<label for="descripcion" class="">Descripcion</label>
 					
-					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario"></textarea>
+					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario" class="form-control"></textarea>
 						
 					</div>
 				</div>
