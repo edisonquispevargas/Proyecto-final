@@ -3,26 +3,22 @@ include('link.php');
 require '../conexion.php';
 
 $nombre = $_POST['nombre'];
-$cantidad = $_POST['cantidad'];
-$precio = $_POST['precio'];
-$fecha = $_POST['fecha'];
-$proveedor = $_POST['proveedor'];
-$desc = $_POST['descripcion'];
+$precioC = $_POST['precioC'];
+$precioV = $_POST['precioV'];
+$stock = $_POST['stock'];
 
-$sql = "INSERT INTO productos(nombre_producto,cantidad,precio_total,fecha_entrada,proveedor,descripcion) 
-    VALUES ('$nombre','$cantidad','$precio','$fecha','$proveedor','$desc')";
+
+$sql = "INSERT INTO precio(nombre_producto,precio_compra,precio_venta,stock) 
+    VALUES ('$nombre','$precioC','$precioV','$stock')";
     
     $resultado = $mysqli->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Guardado Producto con Exito</title>
+    <title>Guardado Precio con Exito</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 <body>
     <div class="navbar-lateral full-reset">
