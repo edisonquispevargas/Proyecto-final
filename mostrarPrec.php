@@ -102,20 +102,21 @@ include('link.php');
                    <thead>
                     <tr>
                         <th>codigo</th>
-                        <th>nombre producto</th>
+                        <th>producto</th>
                         <th>precio compra</th>
                         <th>precio venta</th>
                         <th>Stock</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <!-- <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
-                    { ?> -->
+                    <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
+                    { ?> 
                     <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['titulo']; ?></td>
-                    <td><?php echo $row['fecha']; ?></td>
-                    <td><?php echo $row['descripcion']; ?></td>
+                    <td><?php echo $row['nombre_producto']; ?></td>
+                    <td><?php echo $row['precio_compra']; ?></td>
+                    <td><?php echo $row['precio_venta']; ?></td>
+                    <td><?php echo $row['stock']; ?></td>
                     <td><a href="actualizar.php?id=<?php echo $row 
                     ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                     </tr>
