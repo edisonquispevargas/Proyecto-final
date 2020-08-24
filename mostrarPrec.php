@@ -1,6 +1,19 @@
 <?php
 include('link.php');
+require 'conexion.php';
+         
+$where = "";
+       
+if(!empty($_POST))
+{
+    $valor = $_POST ['campo'];
+    if(!empty($valor)){
+        $where = "WHERE nombre_producto LIKE '%$valor%'";
+    }
+}
 
+$sql = "SELECT * FROM precio $where";
+$resultado = $mysqli->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,9 +21,6 @@ include('link.php');
     <title>Listado de Productos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    
-
 </head>
 <body>
     <div class="navbar-lateral full-reset">
