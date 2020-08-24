@@ -75,12 +75,12 @@ $sql = "INSERT INTO precio(nombre_producto,precio_compra,precio_venta,stock)
              <div class="fila">
 	            <div class="row" style="text-align:center" >
 	                <?php if($resultado){?>
-	                <h3>Su producto fue guardado con exito</h3>
+	                <h3>Precio de producto y stock agregados correctamente </h3>
 	                <?php } else{ ?>
 	                <h3>error</h3>
 	                <?php } ?>
 	                
-	                <a href="../mostrarPro.php" class="btn btn-success">ver los productos</a>
+	                <a href="../mostrarPro.php" class="btn btn-success">pulse aquì para ver los precio de los productos</a>
 	            </div>
 	        </div>
             </div>
