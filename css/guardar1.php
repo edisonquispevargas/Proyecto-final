@@ -17,7 +17,7 @@ $sql = "INSERT INTO productos(nombre_producto,cantidad,precio_total,fecha_entrad
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Agregar Producto</title>
+    <title>Guardado Producto con Exito</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
