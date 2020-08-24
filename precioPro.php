@@ -79,29 +79,29 @@ include('link.php');
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR PRECIO A PRODUCTO</h3>
 			</div>
-             	<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
+             	<form class="form-horizontal" method="POST" action="css/guardar2.php" autocomplete="off">
              	<div class="col-sm-10">
 				<div class="form-group">
-					<label for="titulo" class="">Nombre del Producto</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="nombre" class="">Nombre del Producto</label>
+						<input type="text" class="form-control" id="nombre" name="nombre"
 						  required='required' title="Solamente letras y guiones">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Precio Compra</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="precioC" class="">Precio Compra</label>
+						<input type="text" class="form-control" id="precioC" name="precioC"
 						  required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Precio Venta</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="precioV" class="">Precio Venta</label>
+						<input type="text" class="form-control" id="precioV" name="precioV"
 						  required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
                 <div class="form-group">
-					<label for="titulo" class="">Stock</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="stock" class="">Stock</label>
+						<input type="text" class="form-control" id="stock" name="stock"
 						  required='required' title="Solamente números">
 					
 				</div>
