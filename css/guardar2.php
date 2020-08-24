@@ -80,7 +80,7 @@ $sql = "INSERT INTO precio(nombre_producto,precio_compra,precio_venta,stock)
 	                <h3>error</h3>
 	                <?php } ?>
 	                
-	                <a href="../mostrarPro.php" class="btn btn-success">pulse aquì para ver los precio de los productos</a>
+	                <a href="../mostrarPrec.php" class="btn btn-success">pulse aquì para ver los precio de los productos</a>
 	            </div>
 	        </div>
             </div>
