@@ -80,32 +80,33 @@ include('link.php');
              	<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
              	<div class="col-sm-10">
 				<div class="form-group">
-					<label for="titulo" class="">Nombre del Producto</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="nombre" class="">Nombre del Producto</label>
+						<input type="text" class="form-control" id="nombre" name="nombre"
 						  required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Cantidad</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="cantidad" class="">Cantidad</label>
+						<input type="text" class="form-control" id="cantidad" name="cantidad"
 						  required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Precio Total</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="precio" class="">Precio Total</label>
+						<input type="text" class="form-control" id="precio" name="precio"
 						  required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
 				
 				<div class="form-group">
 					<label for="fecha" class="">fecha</label>
-				       <input type="date" class="form-control" name="fecha" required='required' title="Solamente números y guiones, 10 dígitos">
+				       <input type="date" class="form-control" name="fecha" required='required' 
+                       title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Proveedor</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
+					<label for="proveedor" class="">Proveedor</label>
+						<input type="text" class="form-control" id="proveedor" name="proveedor"
 				        required='required' title="Solamente números y guiones, 10 dígitos">
 					
 				</div>
@@ -113,7 +114,8 @@ include('link.php');
 				<div class="form-group">
 					<label for="descripcion" class="">Descripcion</label>
 					
-					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario" class="form-control"></textarea>
+					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario" 
+                    class="form-control"></textarea>
 						
 					</div>
 				</div>
