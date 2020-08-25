@@ -79,50 +79,37 @@ include('link.php');
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR NUEVO PROVEEDOR</h3>
 			</div>
-             	<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
+             	<form class="form-horizontal" method="POST" action="guardar3.php" autocomplete="off">
              	<div class="col-sm-10">
 				<div class="form-group">
-					<label for="titulo" class="">Nombre del Proveedor</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="nombre" class="">Nombre del Proveedor</label>
+						<input type="text" class="form-control" id="nombre" name="nombre"
+						  required='required' title="Escribe el nombre del proveedor">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Dirección</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="direccion" class="">Dirección</label>
+						<input type="text" class="form-control" id="direccion" name="direccion"
+						  required='required' title="Escribe la dirección del proveedor">
 					
-				</div>
+				
 				<div class="form-group">
-					<label for="titulo" class="">Ciudad</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="telefono" class="">Telefono</label>
+						<input type="text" class="form-control" id="telefono" name="telefono"
+				        required='required' title="Escriba el número de telefono del proveedor">
 					
 				</div>
 				
                 <div class="form-group">
-					<label for="titulo" class="">Departamento</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-				        required='required' title="Solamente números y guiones, 10 dígitos">
-					
-				</div>
-				<div class="form-group">
-					<label for="titulo" class="">Telefono</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-				        required='required' title="Solamente números y guiones, 10 dígitos">
-					
-				</div>
-				
-                <div class="form-group">
-					<label for="titulo" class="">Correo</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-				        required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="email" class="">Email</label>
+						<input type="text" class="form-control" id="email" name="email"
+				        required='required' title="Escribe el Email de proveedor">
 					
 				</div>
                 <div class="form-group">
-					<label for="titulo" class="">Preducto/Servicio</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-				        required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="producto" class="">Preducto/Servicio</label>
+						<input type="text" class="form-control" id="producto" name="producto"
+				        required='required' title="Escriba el producto que distribuye el proveedor">
 					
 				</div>
 				
