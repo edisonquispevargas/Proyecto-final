@@ -9,8 +9,6 @@ include('link.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    
-
 </head>
 <body>
     <div class="navbar-lateral full-reset">
@@ -104,10 +102,8 @@ include('link.php');
                         <th>codigo</th>
                         <th>nombre proveedor</th>
                         <th>dirección</th>
-                        <th>ciudad</th>
-                        <th>departamento</th>
                         <th>telefono</th>
-                        <th>correo</th>
+                        <th>email</th>
                         <th>producto</th>
                     </tr>
                     </thead>
@@ -125,14 +121,8 @@ include('link.php');
                     <?php } ?>
                     </tbody>
                 </table>
-                <a href="cerrar.php" class="btn btn-success btn-lg">cerrar</a><br>
-            
         </div>
-              
-              
-            
             </div>
-            
         </div>
         <section class="full-reset text-center" style="padding: 40px 0;">         
         </section>
