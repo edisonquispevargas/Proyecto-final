@@ -142,8 +142,7 @@ $resultado = $mysqli->query($sql);
                     <?php } ?>
                     </tbody>
                 </table>
-                <a href="cerrar.php" class="btn btn-success btn-lg">cerrar</a><br>
-            
+           
         </div>
               
               
