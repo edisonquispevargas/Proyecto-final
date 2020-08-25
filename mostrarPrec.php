@@ -18,7 +18,7 @@ $resultado = $mysqli->query($sql);
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Listado de Productos</title>
+    <title>Listado de Productos con Precio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -133,12 +133,9 @@ $resultado = $mysqli->query($sql);
                     <?php } ?>
                     </tbody>
                 </table>
-                <a href="cerrar.php" class="btn btn-success btn-lg">cerrar</a><br>
-            
+
         </div>
-              
-              
-            
+
             </div>
             
         </div>
