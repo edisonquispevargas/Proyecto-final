@@ -91,7 +91,7 @@ include('link.php');
 					<label for="direccion" class="">Dirección</label>
 						<input type="text" class="form-control" id="direccion" name="direccion"
 						  required='required' title="Escribe la dirección del proveedor">
-					
+					</div>
 				
 				<div class="form-group">
 					<label for="telefono" class="">Telefono</label>
