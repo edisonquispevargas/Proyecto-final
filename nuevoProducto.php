@@ -82,40 +82,39 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+						  required='required' title="Escriba el nombre del producto">
 					
 				</div>
 				<div class="form-group">
 					<label for="cantidad" class="">Cantidad</label>
 						<input type="text" class="form-control" id="cantidad" name="cantidad"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+						  required='required' title="Escriba la cantidad de productos, solamente números">
 					
 				</div>
 				<div class="form-group">
 					<label for="precio" class="">Precio Total</label>
 						<input type="text" class="form-control" id="precio" name="precio"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+						  required='required' title="Escriba el precio total del producto">
 					
 				</div>
 				
 				<div class="form-group">
 					<label for="fecha" class="">fecha</label>
 				       <input type="date" class="form-control" name="fecha" required='required' 
-                       title="Solamente números y guiones, 10 dígitos">
+                       title="Seleccione la fecha">
 					
 				</div>
 				<div class="form-group">
 					<label for="proveedor" class="">Proveedor</label>
 						<input type="text" class="form-control" id="proveedor" name="proveedor"
-				        required='required' title="Solamente números y guiones, 10 dígitos">
+				        required='required' title="Escriba el nombre del proveedor del producto">
 					
 				</div>
 				
 				<div class="form-group">
 					<label for="descripcion" class="">Descripcion</label>
-					
 					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario" 
-                    class="form-control"></textarea>
+                    class="form-control" title="Has descripción del producto que registro"></textarea>
 						
 					</div>
 				</div>
