@@ -125,9 +125,11 @@ $resultado = $mysqli->query($sql);
                     { ?> 
                     <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['titulo']; ?></td>
-                    <td><?php echo $row['fecha']; ?></td>
-                    <td><?php echo $row['descripcion']; ?></td>
+                    <td><?php echo $row['nombre_proveedor']; ?></td>
+                    <td><?php echo $row['direccion']; ?></td>
+                    <td><?php echo $row['telefono']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['producto_servicio']; ?></td>
                     <td><a href="actualizar.php?id=<?php echo $row 
                     ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                     </tr>
