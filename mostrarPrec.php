@@ -116,6 +116,7 @@ $resultado = $mysqli->query($sql);
                         <th>precio compra</th>
                         <th>precio venta</th>
                         <th>Stock</th>
+                        <th>actualizar</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -127,7 +128,7 @@ $resultado = $mysqli->query($sql);
                     <td><?php echo $row['precio_compra']; ?></td>
                     <td><?php echo $row['precio_venta']; ?></td>
                     <td><?php echo $row['stock']; ?></td>
-                    <td><a href="actualizar.php?id=<?php echo $row 
+                    <td><a href="css/actualizar1.php?id=<?php echo $row 
                     ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                     </tr>
                     <?php } ?>
@@ -139,8 +140,7 @@ $resultado = $mysqli->query($sql);
             </div>
             
         </div>
-        <section class="full-reset text-center" style="padding: 40px 0;">         
-        </section>
+     </di>
         
     </div>
 </body>
