@@ -136,7 +136,7 @@ $resultado = $mysqli->query($sql);
                     <td><?php echo $row['fecha_entrada']; ?></td>
                     <td><?php echo $row['proveedor']; ?></td>
                     <td><?php echo $row['descripcion']; ?></td>
-                    <td><a href="actualizar.php?id=<?php echo $row 
+                    <td><a href="css/actualizar.php?id=<?php echo $row 
                     ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                     </tr>
                     <?php } ?>
