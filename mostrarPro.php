@@ -121,7 +121,7 @@ $resultado = $mysqli->query($sql);
                         <th>fecha</th>
                         <th>proveedor</th>
                         <th>descrepcion</th>
-                        
+                        <th>actualizar</th>
                        
                     </tr>
                     </thead>
@@ -145,7 +145,7 @@ $resultado = $mysqli->query($sql);
            
         </div>
               
-              
+           </div> 
             
             </div>
             
