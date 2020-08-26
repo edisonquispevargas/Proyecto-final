@@ -1,6 +1,19 @@
 <?php
 include('link.php');
+require 'conexion.php';
+         
+$where = "";
+       
+if(!empty($_POST))
+{
+    $valor = $_POST ['campo'];
+    if(!empty($valor)){
+        $where = "WHERE nombre_producto LIKE '%$valor%'";
+    }
+}
 
+$sql = "SELECT * FROM proveedor $where";
+$resultado = $mysqli->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -108,8 +121,8 @@ include('link.php');
                     </tr>
                     </thead>
                     <tbody>
-                    <!-- <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
-                    { ?> -->
+                     <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
+                    { ?> 
                     <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['titulo']; ?></td>
