@@ -131,7 +131,7 @@ $resultado = $mysqli->query($sql);
                     <td><?php echo $row['telefono']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td><?php echo $row['producto_servicio']; ?></td>
-                    <td><a href="actualizar.php?id=<?php echo $row 
+                    <td><a href="css/actualizar2.php?id=<?php echo $row 
                     ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
                     </tr>
                     <?php } ?>
