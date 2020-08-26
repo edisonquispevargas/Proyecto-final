@@ -113,11 +113,12 @@ $resultado = $mysqli->query($sql);
                    <thead>
                     <tr>
                         <th>codigo</th>
-                        <th>nombre proveedor</th>
+                        <th>proveedor</th>
                         <th>dirección</th>
                         <th>telefono</th>
                         <th>email</th>
                         <th>producto</th>
+                        <th>actualizar</th>
                     </tr>
                     </thead>
                     <tbody>
