@@ -119,6 +119,7 @@ include('link.php');
 						<button type="submit" class="btn btn-success">Guardar</button>
 					</div>
 				</div>
+                </div>
 			</form>
             
             
