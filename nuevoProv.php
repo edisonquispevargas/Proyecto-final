@@ -79,7 +79,7 @@ include('link.php');
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR NUEVO PROVEEDOR</h3>
 			</div>
-             	<form class="form-horizontal" method="POST" action="guardar3.php" autocomplete="off">
+             	<form class="form-horizontal" method="POST" action="css/guardar3.php" autocomplete="off">
              	<div class="col-sm-10">
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Proveedor</label>
