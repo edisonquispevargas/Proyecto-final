@@ -120,9 +120,9 @@ include('link.php');
 				</div>
 				
 				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-5">
-						<a href="inicio.php" class="btn btn-default">Regresar</a>
-						<button type="submit" class="btn btn-success">Guardar</button>
+					<div class="col-sm-offset-4 col-sm-5">
+						<a href="index.php" class="btn btn-info">Regresar</a>
+						<button type="submit" class="btn btn-info">Agregar</button>
 					</div>
 				</div>
 			</form>
