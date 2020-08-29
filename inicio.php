@@ -73,7 +73,16 @@ include('link.php');
             <div class="page-header">
               <h1 class="all-tittles">Sistema de Almacen<small> Inicio</small></h1>
             </div>
-            aqui va todo el codigo
+            <div class="edi" >
+            <div class="form-group">
+					<div class="col-sm-offset-3 col-sm-5">
+                    <a href="registrarse.php" class="btn btn-info">registar un nuevo usuario</a>
+            <a href="index.php" class="btn btn-info">Salir del sistema</a><br>
+					</div>
+				</div>
+            
+            
+            </div>
             
         </div>
         <section class="full-reset text-center" style="padding: 40px 0;">         
