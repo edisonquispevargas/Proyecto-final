@@ -80,55 +80,46 @@ include('link.php');
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR EMPLEADO</h3>
 			</div>
-             	<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
+             	<form class="form-horizontal" method="POST" action="css/guardar4.php" autocomplete="off">
              	<div class="col-sm-10">
 				<div class="form-group">
-					<label for="titulo" class="">Nombres</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente letras y guiones">
+					<label for="nombre" class="">Nombres y Apellidos</label>
+						<input type="text" class="form-control" id="nombre" name="nombre"
+						  required='required' title="escriba el nombre y apellido del empleado">
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Apellidos</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números y guiones, 10 dígitos" pla>
+					<label for="telefono" class="">Telefono</label>
+						<input type="text" class="form-control" id="telefono" name="telefono"
+						  required='required' title="escriba el numero de telefono del empleado" pla>
 					
 				</div>
 				<div class="form-group">
-					<label for="titulo" class="">Telefono</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números y guiones, 10 dígitos">
+					<label for="email" class="">Email</label>
+						<input type="text" class="form-control" id="email" name="email"
+						  required='required' title="escriba  email del empleado">
 					
 				</div>
                 <div class="form-group">
                    <label for="">Cargo</label>
-                        <select name="pais" class="form-control">
-                                <option value="Elegir" id="AF">Almacen</option>
-                                <option value="Afganistán" id="AF">Operador</option>
-                                <option value="Albania" id="AL">Contador</option>
-                                <option value="Alemania" id="DE">Vendedor</option>
+                        <select name="cargo" class="form-control" id="cargo">
+                                <option value="Elegir">Elegir opción</option>
+                                <option value="almacen">Almacen</option>
+                                <option value="operador" >Operador</option>
+                                <option value="contador" >Contador</option>
+                                <option value="vendedor" >Vendedor</option>
                     </select>
                </div>
                <div class="form-group">
                    <label for="">Genero</label>
-                        <select name="pais" class="form-control">
-                                <option value="Elegir" id="AF">Masculino</option>
-                                <option value="Afganistán" id="AF">Femenino</option>
+                        <select name="genero" class="form-control" id="genero">
+                                <option value="Elegir">Elegir opción</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
                                 
                     </select>
                </div>
-                <div class="form-group">
-					<label for="titulo" class="">Correo</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números">
-					
-				</div>
-                <div class="form-group">
-					<label for="titulo" class="">Contraseña</label>
-						<input type="text" class="form-control" id="nombre" name="titulo"
-						  required='required' title="Solamente números">
-					
-				</div>
+              
 			
 				</div>
 				
