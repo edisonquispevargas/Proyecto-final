@@ -1,6 +1,19 @@
 <?php
 include('link.php');
+require 'conexion.php';
+         
+$where = "";
+       
+if(!empty($_POST))
+{
+    $valor = $_POST ['campo'];
+    if(!empty($valor)){
+        $where = "WHERE nombre LIKE '%$valor%'";
+    }
+}
 
+$sql = "SELECT * FROM empleado $where";
+$resultado = $mysqli->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -101,28 +114,30 @@ include('link.php');
                 <table class="table table-striped">
                    <thead>
                     <tr>
-                        <th>codigo</th>
-                        <th>nombres</th>
-                        <th>Apellidos</th>
+                        <th>Codigo</th>
+                        <th>Nombres</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
                         <th>Cargo</th>
                         <th>Genero</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <!-- <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
-                    { ?> -->
+                     <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
+                    { ?> 
                     <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['titulo']; ?></td>
-                    <td><?php echo $row['fecha']; ?></td>
-                    <td><?php echo $row['descripcion']; ?></td>
-                    <td><a href="actualizar.php?id=<?php echo $row 
-                    ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><?php echo $row['nombre']; ?></td>
+                    <td><?php echo $row['telefono']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['cargo']; ?></td>
+                    <td><?php echo $row['genero']; ?></td>
+                    
                     </tr>
                     <?php } ?>
                     </tbody>
                 </table>
-                <a href="cerrar.php" class="btn btn-success btn-lg">cerrar</a><br>
+                
             
         </div>
               
