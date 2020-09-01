@@ -84,25 +84,26 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="Escriba el nombre del producto">
+						  required='required' title="nombre del producto, solamente letras de A-Z" pattern="[a-zA-Z]+">
 					
 				</div>
 				<div class="form-group">
 					<label for="precioC" class="">Precio Compra</label>
 						<input type="text" class="form-control" id="precioC" name="precioC"
-						  required='required' title="Escriba el precio de compra del producto">
+						  required='required' title="Escriba el precio de compra del producto" pattern="[0-9S/]+">
 					
 				</div>
 				<div class="form-group">
 					<label for="precioV" class="">Precio Venta</label>
 						<input type="text" class="form-control" id="precioV" name="precioV"
-						  required='required' title="Escriba el precio de venta del producto">
+						  required='required' title="Escriba el precio de compra del producto" pattern="[0-9S/]+">
 					
 				</div>
                 <div class="form-group">
 					<label for="stock" class="">Stock</label>
 						<input type="text" class="form-control" id="stock" name="stock"
-						  required='required' title="Escriba la cantidad de prosuctos disponibles, Solamente números">
+						  required='required'title="Escriba la cantidad de productos disponibles, Solamente números"
+                          pattern="[0-9]+">>
 					
 				</div>
 			
