@@ -84,32 +84,35 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Proveedor</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="Escribe el nombre del proveedor">
+						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z]+">
 					
 				</div>
 				<div class="form-group">
 					<label for="direccion" class="">Dirección</label>
 						<input type="text" class="form-control" id="direccion" name="direccion"
-						  required='required' title="Escribe la dirección del proveedor">
+						  required='required' title="Escribe la dirección del proveedor" pattern="[a-zA-Z]+">
 					</div>
 				
 				<div class="form-group">
 					<label for="telefono" class="">Telefono</label>
 						<input type="text" class="form-control" id="telefono" name="telefono"
-				        required='required' title="Escriba el número de telefono del proveedor">
+				        required='required' title="telefono del proveedor,solamente números"
+                        maxlength="9"
+						  pattern="[0-9]+">
 					
 				</div>
 				
                 <div class="form-group">
 					<label for="email" class="">Email</label>
-						<input type="text" class="form-control" id="email" name="email"
+						<input type="email" class="form-control" id="email" name="email"
 				        required='required' title="Escribe el Email de proveedor">
 					
 				</div>
                 <div class="form-group">
 					<label for="producto" class="">Preducto/Servicio</label>
 						<input type="text" class="form-control" id="producto" name="producto"
-				        required='required' title="Escriba el producto que distribuye el proveedor">
+				        required='required' title="Escriba el producto que distribuye el proveedor"
+                        pattern="[a-zA-Z]+">
 					
 				</div>
 				
