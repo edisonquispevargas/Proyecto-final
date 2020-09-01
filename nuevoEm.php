@@ -85,25 +85,26 @@ include('link.php');
                 <div class="form-group">
                     <label for="nombre" class="">Nombres y Apellidos</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"
-                          required='required' title="escriba el nombre y apellido del empleado">
+                          required='required' title="Solamente letras de A Z" pattern="[a-zA-Z]+">
                     
                 </div>
                 <div class="form-group">
                     <label for="telefono" class="">Telefono</label>
                         <input type="text" class="form-control" id="telefono" name="telefono"
-                          required='required' title="escriba el numero de telefono del empleado" pla>
+                          required='required' title="escriba el número de telefono del empleado,solamente números" maxlength="9"
+						  pattern="[0-9]+">>
                     
                 </div>
                 <div class="form-group">
                     <label for="email" class="">Email</label>
-                        <input type="text" class="form-control" id="email" name="email"
+                        <input type="email" class="form-control" id="email" name="email"
                           required='required' title="escriba  email del empleado">
                     
                 </div>
                 <div class="form-group">
                    <label for="">Cargo</label>
-                        <select name="cargo" class="form-control" id="cargo">
-                                <option value="Elegir">Elegir opción</option>
+                        <select name="cargo" class="form-control" id="cargo" required='required'>
+                               
                                 <option value="almacen">Almacen</option>
                                 <option value="operador" >Operador</option>
                                 <option value="contador" >Contador</option>
@@ -112,8 +113,8 @@ include('link.php');
                </div>
                <div class="form-group">
                    <label for="">Genero</label>
-                        <select name="genero" class="form-control" id="genero">
-                                <option value="Elegir">Elegir opción</option>
+                        <select name="genero" class="form-control" id="genero" required='required'>
+                               
                                 <option value="masculino">Masculino</option>
                                 <option value="femenino">Femenino</option>
                                 
