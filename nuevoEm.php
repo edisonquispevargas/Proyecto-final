@@ -92,7 +92,7 @@ include('link.php');
                     <label for="telefono" class="">Telefono</label>
                         <input type="text" class="form-control" id="telefono" name="telefono"
                           required='required' title="escriba el número de telefono del empleado,solamente números" maxlength="9"
-						  pattern="[0-9]+">>
+						  pattern="[0-9]+">
                     
                 </div>
                 <div class="form-group">
