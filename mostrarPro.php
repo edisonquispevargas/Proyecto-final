@@ -114,7 +114,7 @@ $resultado = $mysqli->query($sql);
                 <table class="table table-striped">
                    <thead>
                     <tr>
-                        <th>codigo</th>
+                        
                         <th>producto</th>
                         <th>cantidad</th>
                         <th>precio</th>
@@ -129,7 +129,7 @@ $resultado = $mysqli->query($sql);
                      <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) 
                     { ?> 
                     <tr>
-                    <td><?php echo $row['id']; ?></td>
+                   
                     <td><?php echo $row['nombre_producto']; ?></td>
                     <td><?php echo $row['cantidad']; ?></td>
                     <td><?php echo $row['precio_total']; ?></td>
