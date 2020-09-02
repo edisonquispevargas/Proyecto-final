@@ -85,20 +85,21 @@ include('link.php');
                 <div class="form-group">
                     <label for="nombre" class="">Nombres y Apellidos</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"
-                          required='required' title="Solamente letras de A Z" pattern="[a-zA-Z]+">
+                          required='required' title="Solamente letras de A Z" pattern="[a-zA-Z ]+">
                     
                 </div>
                 <div class="form-group">
                     <label for="telefono" class="">Telefono</label>
                         <input type="text" class="form-control" id="telefono" name="telefono"
                           required='required' title="escriba el número de telefono del empleado,solamente números" maxlength="9"
-						  pattern="[0-9]+">
+						  pattern="[0-9]{9}">
                     
                 </div>
                 <div class="form-group">
                     <label for="email" class="">Email</label>
                         <input type="email" class="form-control" id="email" name="email"
-                          required='required' title="escriba  email del empleado">
+                          required='required' title="escriba  email del empleado"
+                          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" >
                     
                 </div>
                 <div class="form-group">
