@@ -8,7 +8,7 @@ if(!empty($_POST))
 {
     $valor = $_POST ['campo'];
     if(!empty($valor)){
-        $where = "WHERE nombre_producto LIKE '%$valor%'";
+        $where = "WHERE nombre_proveedor LIKE '%$valor%'";
     }
 }
 
