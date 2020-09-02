@@ -103,7 +103,7 @@ include('link.php');
 					<label for="stock" class="">Stock</label>
 						<input type="text" class="form-control" id="stock" name="stock"
 						  required='required'title="Escriba la cantidad de productos disponibles, Solamente números"
-                          pattern="[0-9]+">
+                          pattern="[A-Za-z0-9 ]+">
 					
 				</div>
 			
