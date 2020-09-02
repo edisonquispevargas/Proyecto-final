@@ -84,13 +84,13 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Proveedor</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z]+">
+						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z./- ]+">
 					
 				</div>
 				<div class="form-group">
 					<label for="direccion" class="">Dirección</label>
 						<input type="text" class="form-control" id="direccion" name="direccion"
-						  required='required' title="Escribe la dirección del proveedor" pattern="[a-zA-Z]+">
+						  required='required' title="Escribe la dirección del proveedor" pattern="[A-Za-z0-9./- ]+">
 					</div>
 				
 				<div class="form-group">
@@ -98,21 +98,22 @@ include('link.php');
 						<input type="text" class="form-control" id="telefono" name="telefono"
 				        required='required' title="telefono del proveedor,solamente números"
                         maxlength="9"
-						  pattern="[0-9]+">
+						  pattern="[0-9]{9}">
 					
 				</div>
 				
                 <div class="form-group">
 					<label for="email" class="">Email</label>
 						<input type="email" class="form-control" id="email" name="email"
-				        required='required' title="Escribe el Email de proveedor">
+				        required='required' title="Escribe el Email de proveedor"
+                        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
 					
 				</div>
                 <div class="form-group">
 					<label for="producto" class="">Preducto/Servicio</label>
 						<input type="text" class="form-control" id="producto" name="producto"
 				        required='required' title="Escriba el producto que distribuye el proveedor"
-                        pattern="[a-zA-Z]+">
+                        pattern="[a-zA-Z ]+">
 					
 				</div>
 				
