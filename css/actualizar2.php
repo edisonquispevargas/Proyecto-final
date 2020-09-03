@@ -74,7 +74,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <h3 style="text-align:center">ACTUALIZAR PROVEEDOR</h3>
             </div>
                 <form class="form-horizontal" method="POST" action="updatevista2.php" autocomplete="off">
-                <div class="col-sm-10">
+                <div class="col-xs-12 col-sm-7 col-sm-offset-2">
                 
                 <div class="form-group">
                     <label for="nombre" class="">Nombre del Proveedor</label>
@@ -117,8 +117,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-5">
-                        <a href="../mostrarProv.php" class="btn btn-default">Regresar</a>
-                        <button type="submit" class="btn btn-success">Guardar</button>
+                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
                     </div>
                 </div>
                     </div>
