@@ -75,9 +75,9 @@ include('link.php');
             </div>
             <div class="edi" >
             <div class="form-group">
-					<div class="col-sm-offset-3 col-sm-5">
-                    <a href="registrarse.php" class="btn btn-info">registar un nuevo usuario</a>
-            <a href="index.php" class="btn btn-info">Salir del sistema</a><br>
+            <div class="col-sm-offset-3 col-sm-5">
+                    <a href="registrarse.php" class="btn btn-info"><i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp;Nuevo Administrador</a>
+            <a href="index.php" class="btn btn-info" ><i class="zmdi zmdi-power"></i>&nbsp;&nbsp;Salir</a><br>
 					</div>
 				</div>
             
