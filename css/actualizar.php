@@ -74,7 +74,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
                 
             <form class="form-horizontal" method="POST" action="updatevista.php" autocomplete="off">
-             	<div class="col-sm-10">
+             	<div class="col-xs-12 col-sm-7 col-sm-offset-2">
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
@@ -123,9 +123,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				</div>
 				
 				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-5">
-						<a href="../mostrarPro.php" class="btn btn-default">Regresar</a>
-						<button type="submit" class="btn btn-success">Guardar</button>
+					<div class="col-sm-offset-2 col-sm-5">
+                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
 					</div>
 				</div>
 			</form>
