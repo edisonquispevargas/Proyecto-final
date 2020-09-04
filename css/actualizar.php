@@ -33,7 +33,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
             <div>
                 <figure>
-                    <img src="../assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="../assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
@@ -78,7 +78,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="Escriba el nombre del producto" value=<?php echo $row['nombre_producto'] ?>>
+						  required='required' title="nombre del producto solamente letras" pattern="[a-zA-Z ]+"
+                           value=<?php echo $row['nombre_producto'] ?>>
 					
 				</div>
 				
@@ -86,7 +87,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                         ['id'] ?>"/>
 				<div class="form-group">
 					<label for="cantidad" class="">Cantidad</label>
-						<input type="text" class="form-control" id="cantidad" name="cantidad"
+						<input type="number" class="form-control" id="cantidad" name="cantidad"
 						  required='required' title="Escriba la cantidad de productos, solamente números"
 						  value=<?php echo $row['cantidad'] ?>>
 					
@@ -94,7 +95,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="precio" class="">Precio Total</label>
 						<input type="text" class="form-control" id="precio" name="precio"
-						  required='required' title="Escriba el precio total del producto"
+						  required='required' title="Escriba el precio total del producto" pattern="[0-9Ss$/ ]+"
 						  value=<?php echo $row['precio_total'] ?>>
 					
 				</div>
@@ -108,7 +109,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="proveedor" class="">Proveedor</label>
 						<input type="text" class="form-control" id="proveedor" name="proveedor"
-				        required='required' title="Escriba el nombre del proveedor del producto"
+				        required='required' title="Escriba el nombre del proveedor del producto" pattern="[a-zA-Z./- ]+"
 				        value=<?php echo $row['proveedor'] ?>>
 					
 				</div>
@@ -124,7 +125,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-5">
-                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+                    <a href="../mostrarPro.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
 						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
 					</div>
 				</div>
