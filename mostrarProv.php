@@ -38,7 +38,7 @@ $resultado = $mysqli->query($sql);
             </div>
             <div>
                 <figure>
-                    <img src="assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
@@ -84,7 +84,7 @@ $resultado = $mysqli->query($sql);
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small>   </small></h1>
+              <h1 class="all-tittles">Sistema de Almacén<small>   </small></h1>
             </div>
        <div class="edii">
               <div class="container">
@@ -112,13 +112,13 @@ $resultado = $mysqli->query($sql);
                 <table class="table table-striped">
                    <thead>
                     <tr>
-                        <th>codigo</th>
-                        <th>proveedor</th>
-                        <th>dirección</th>
-                        <th>telefono</th>
-                        <th>email</th>
-                        <th>producto</th>
-                        <th>actualizar</th>
+                        <th>Código</th>
+                        <th>Proveedor</th>
+                        <th>Dirección</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
+                        <th>Producto</th>
+                        <th>Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -131,8 +131,10 @@ $resultado = $mysqli->query($sql);
                     <td><?php echo $row['telefono']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td><?php echo $row['producto_servicio']; ?></td>
-                    <td><a href="css/actualizar2.php?id=<?php echo $row 
-                    ['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a class="link_edit" href="css/actualizar2.php?id=<?php echo $row["id"];?>">editar</a>
+                        <a href="#" data-href="css/eliminar2.php?id=<?php echo $row["id"];?>"
+                           data-toggle="modal" data-target="#confirm-delete">eliminar</a>
+                   </td>
                     </tr>
                     <?php } ?>
                     </tbody>
@@ -140,9 +142,39 @@ $resultado = $mysqli->query($sql);
         </div>
             </div>
         </div>
-        <section class="full-reset text-center" style="padding: 40px 0;">         
-        </section>
-        
+        </div>
     </div>
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"
+    aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">eliminar Registro</h4>
+    </div>
+    
+    <div class="modal-body">
+    ¿Desea eliminar el registro?
+    </div>
+
+    <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal"
+    >cancelar</button>
+    <a class="btn btn-danger btn-ok">eliminar</a>
+             </div>
+          </div>
+         </div>
+    </div>
+    <script>
+    $('#confirm-delete').on('show.bs.modal', function(e) {
+        $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data
+        ('href'));
+        $('.debug-url').html('Delete URL: <strong>' + $(this).find(
+            '.btn-ok').attr('href') + '</strong>');
+        
+    });
+    </script>
 </body>
 </html>
