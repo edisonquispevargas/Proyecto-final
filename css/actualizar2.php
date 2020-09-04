@@ -33,7 +33,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
             <div>
                 <figure>
-                    <img src="../assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="../assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
@@ -79,7 +79,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="nombre" class="">Nombre del Proveedor</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"
-                          required='required' title="Escribe el nombre del proveedor" 
+                          required='required' title="nombre del proveedor,solamente letras" pattern="[a-zA-Z./- ]+" 
                           value=<?php echo $row['nombre_proveedor'] ?>>
                     
                 </div>
@@ -89,35 +89,38 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="direccion" class="">Dirección</label>
                         <input type="text" class="form-control" id="direccion" name="direccion"
-                          required='required' title="Escribe la dirección del proveedor" value=<?php echo $row['direccion'] ?>>
+                          required='required' title="Escribe la dirección del proveedor" pattern="[A-Za-z0-9./- ]+"
+                           value=<?php echo $row['direccion'] ?>>
                     </div>
                 
                 <div class="form-group">
                     <label for="telefono" class="">Telefono</label>
                         <input type="text" class="form-control" id="telefono" name="telefono"
-                        required='required' title="Escriba el número de telefono del proveedor"
+                        required='required' title="Escriba el número de telefono del proveedor"  maxlength="9"
+						  pattern="[0-9]{9}"
                         value=<?php echo $row['telefono'] ?>>
                     
                 </div>
                 
                 <div class="form-group">
                     <label for="email" class="">Email</label>
-                        <input type="text" class="form-control" id="email" name="email"
+                        <input type="email" class="form-control" id="email" name="email"
                         required='required' title="Escribe el Email de proveedor"
+                        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
                         value=<?php echo $row['email'] ?>>
                     
                 </div>
                 <div class="form-group">
                     <label for="producto" class="">Preducto/Servicio</label>
                         <input type="text" class="form-control" id="producto" name="producto"
-                        required='required' title="Escriba el producto que distribuye el proveedor"
+                        required='required' title="Escriba el producto que distribuye el proveedor" pattern="[a-zA-Z ]+"
                         value=<?php echo $row['producto_servicio'] ?>>
                     
                 </div>
                 
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-5">
-                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+                    <a href="../mostrarProv.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
 						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
                     </div>
                 </div>
