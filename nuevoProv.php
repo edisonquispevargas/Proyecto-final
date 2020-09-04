@@ -27,7 +27,7 @@ include('link.php');
             </div>
             <div>
                 <figure>
-                    <img src="assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
@@ -119,7 +119,7 @@ include('link.php');
 				
 				<div class="form-group">
 					<div class="col-sm-offset-4 col-sm-5">
-                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+                    <a href="inicio.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
 						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
 					</div>
 				</div>
