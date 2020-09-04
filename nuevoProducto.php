@@ -25,7 +25,7 @@ include('link.php');
             </div>
             <div>
                 <figure>
-                    <img src="assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 100%;">
                 </figure>
                 
@@ -71,7 +71,7 @@ include('link.php');
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small></small></h1>
+              <h1 class="all-tittles">Sistema de Almacén<small></small></h1>
             </div>
             <div class="edi">
                 <div class="row">
@@ -82,7 +82,7 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="Nombre del producto. Solamente letras de a-z" pattern="[a-zA-Z ]+">
+						  required='required' title="Nombre del producto, Solamente letras de a-z" pattern="[a-zA-Z ]+">
 					
 				</div>
 				<div class="form-group">
@@ -113,7 +113,7 @@ include('link.php');
 				</div>
 				
 				<div class="form-group">
-					<label for="descripcion" class="">Descripcion</label>
+					<label for="descripcion" class="">Descripción</label>
 					<textarea name="descripcion" rows="5" cols="80" placeholder="Comentario" 
                     class="form-control" title="Has descripción del producto que registro"></textarea>
 						
@@ -122,7 +122,7 @@ include('link.php');
 				
 				<div class="form-group">
 					<div class="col-sm-offset-4 col-sm-5">
-                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+                    <a href="inicio.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
 						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
 					</div>
 				</div>
