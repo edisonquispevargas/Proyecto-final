@@ -28,7 +28,7 @@ include('link.php');
             </div>
             <div>
                 <figure>
-                    <img src="assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
@@ -74,11 +74,11 @@ include('link.php');
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small>   </small></h1>
+              <h1 class="all-tittles">Sistema de Almacén<small>   </small></h1>
             </div>
        <div class="edi">
                 <div class="row">
-                <h3 style="text-align:center">AGREGRAR EMPLEADO</h3>
+                <h3 style="text-align:center">AGREGRAR NUEVO EMPLEADO</h3>
             </div>
                 <form class="form-horizontal" method="POST" action="css/guardar4.php" autocomplete="off">
                 <div class="col-xs-12 col-sm-7 col-sm-offset-2">
@@ -113,7 +113,7 @@ include('link.php');
                     </select>
                </div>
                <div class="form-group">
-                   <label for="">Genero</label>
+                   <label for="">Género</label>
                         <select name="genero" class="form-control" id="genero" required='required'>
                                
                                 <option value="masculino">Masculino</option>
@@ -127,7 +127,7 @@ include('link.php');
                 
                 <div class="form-group">
                     <div class="col-sm-offset-4 col-sm-5">
-                    <a href="index.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
+                    <a href="inicio.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
 						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
                     </div>
                 </div>
