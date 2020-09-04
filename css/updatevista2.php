@@ -2,7 +2,7 @@
 include('link.php');
 require '../conexion.php';
 
-
+$id = $_POST['id'];
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
 $telefono = $_POST['telefono'];
@@ -36,7 +36,7 @@ $producto = $_POST['producto'];
             </div>
             <div>
                 <figure>
-                    <img src="../assets/img/logo.jpg" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="../assets/img/logo.jpg"  class="img-responsive center-box"
                      style="width:100%; height: 27%;">
                 </figure>
                 
