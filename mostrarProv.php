@@ -100,7 +100,7 @@ $resultado = $mysqli->query($sql);
                 <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
                 
                     <input type="text" id="campo" name="campo" required='required'
-                     placeholder="buscar un producto " autocomplete="off"/>
+                     placeholder="buscar un proveedor " autocomplete="off"/>
                     <input type="submit"  id="enviar" name="enviar" value="Buscar"  
                     class="btn btn-danger"  />
                    
