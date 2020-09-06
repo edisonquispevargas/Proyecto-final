@@ -36,7 +36,7 @@ $resultado = $mysqli->query($sql);
                        padding: 0 10px; 
                        margin-left: 7px;">
                 </i> 
-                Sistema de Almacen
+                Sistema de Almacén
             </div>
             <div>
                 <figure>
@@ -86,7 +86,7 @@ $resultado = $mysqli->query($sql);
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small>   </small></h1>
+              <h1 class="all-tittles">Sistema de Almacén<small>   </small></h1>
             </div>
        <div class="edii">
               <div class="container">
@@ -102,7 +102,7 @@ $resultado = $mysqli->query($sql);
                 <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
                 
                     <input type="text" id="campo" name="campo" required='required'
-                     placeholder="buscar un producto " autocomplete="off"/>
+                     placeholder="buscar empleado " autocomplete="off"/>
                     <input type="submit"  id="enviar" name="enviar" value="Buscar"  
                     class="btn btn-danger"  />
                    
@@ -120,7 +120,7 @@ $resultado = $mysqli->query($sql);
                         <th>Email</th>
                         <th>Cargo</th>
                         <th>Genero</th>
-                        <th>accion</th>
+                        <th>acción</th>
                     </tr>
                     </thead>
                     <tbody>
