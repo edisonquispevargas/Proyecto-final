@@ -71,14 +71,27 @@ include('link.php');
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Almacen<small> Inicio</small></h1>
+              <h1 class="all-tittles">Vienvenido al Sistema de Almacen<small> Inicio</small></h1>
             </div>
             <div class="edi" >
             <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+                    <a href="mostrarPro.php" class="btn btn-primary btn-lg"><i class="zmdi zmdi-store">
+                    </i>&nbsp;&nbsp;Listado de los productos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="mostrarProv.php" class="btn btn-warning btn-lg" ><i class="zmdi zmdi-truck zmdi-hc-fw"></i>&nbsp;&nbsp;Listado de Proveedores</a><br><br><br>
+            <a href="mostrarEm.php" class="btn btn-success btn-lg"><i class="zmdi zmdi-accounts zmdi-hc-fw">
+                    </i>&nbsp;&nbsp;Listado de Empleados</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="mostrarPrec.php" class="btn btn-danger btn-lg" ><i class="zmdi zmdi-money"></i>&nbsp;&nbsp; Precio de los productos</a><br><br><br>
+					</div>
             <div class="col-sm-offset-3 col-sm-5">
-                    <a href="registrarse.php" class="btn btn-info"><i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp;Nuevo Administrador</a>
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="registrarse.php" class="btn btn-primary"><i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp;Nuevo Administrador</a><br><br><br><br><br><br>
+            
+					</div>
+                    <div class="col-sm-offset-4 col-sm-5">
+                  
             <a href="index.php" class="btn btn-info" ><i class="zmdi zmdi-power"></i>&nbsp;&nbsp;Salir</a><br>
 					</div>
+                    
 				</div>
             
             
