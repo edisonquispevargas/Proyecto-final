@@ -19,7 +19,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
        header('Location: inicio.php');
     }
     else{
-        $message = 'Correo electronico y contraseña no coinciden';
+        $message = 'Usuario y contraseña no coinciden';
     }
 }
  ?>
@@ -49,7 +49,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 
      
-    <input type="submit" value="ingresar al sistema">
+    <input type="submit" value="Ingresar al sistema">
     <?php if(!empty($message)) : ?>
        <p><?= $message?></p>
        <?php endif; ?>
