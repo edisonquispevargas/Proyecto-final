@@ -21,6 +21,9 @@ $resultado = $mysqli->query($sql);
     <title>Listado de Productos con Precio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="navbar-lateral full-reset">
@@ -86,7 +89,7 @@ $resultado = $mysqli->query($sql);
               <h1 class="all-tittles">Sistema de Almacén<small>   </small></h1>
             </div>
        <div class="edii">
-              <div class="container">
+              <div>
        
             <div class="row">
                 
@@ -107,7 +110,7 @@ $resultado = $mysqli->query($sql);
             </div>
             
             <br>
-            <div class="row table-responsive">
+            <div >
                 <table class="table table-striped">
                    <thead>
                     <tr>
