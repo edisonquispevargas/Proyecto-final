@@ -75,6 +75,27 @@ include('link.php');
             <div class="page-header">
               <h1 class="all-tittles">Sistema de Almacén<small></small></h1>
             </div>
+            <div class="container-fluid"  style="margin: 50px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/new.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                Bienvenido a la sección para registrar un nuevo producto, 
+                    debes de llenar todos los campos del siguiente formulario para poder registrar un producto.
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 lead">
+                    <ol class="breadcrumb">
+                      <li class="active">Nuevo producto</li>
+                      <li><a href="mostrarPro.php">Listado de productos</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
             <div class="edi">
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR NUEVO PRODUCTO</h3>

@@ -75,6 +75,27 @@ include('link.php');
             <div class="page-header">
               <h1 class="all-tittles">Sistema de Almacen<small>   </small></h1>
             </div>
+            <div class="container-fluid"  style="margin: 50px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Bienvenido a la sección para registrar un nuevo proveedor, 
+                    debes de llenar todos los campos del siguiente formulario para poder registrar un proveedor.
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 lead">
+                    <ol class="breadcrumb">
+                      <li class="active">Nuevo proveedor</li>
+                      <li><a href="mostrarProv.php">Listado de proveedores</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
        <div class="edi">
                 <div class="row">
 				<h3 style="text-align:center">AGREGRAR NUEVO PROVEEDOR</h3>
@@ -84,7 +105,7 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Proveedor</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z./- ]+">
+						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z./ ]+">
 					
 				</div>
 				<div class="form-group">
