@@ -86,6 +86,18 @@ $resultado = $mysqli->query($sql);
             <div class="page-header">
               <h1 class="all-tittles">Sistema de Almacén<small>   </small></h1>
             </div>
+            <div class="container-fluid"  style="margin: 50px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Bienvenido a la sección donde se encuentra el listado de proveedores de productos. 
+                    Puedes actualizar o eliminar los datos del proveedor.
+                </div>
+            </div>
+        </div>
+       
        <div class="edii">
               <div>
        
