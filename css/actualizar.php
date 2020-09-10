@@ -78,7 +78,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Producto</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="nombre del producto solamente letras" pattern="[a-zA-Z ]+"
+						  required='required' title="nombre del producto solamente letras" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+"
                            value=<?php echo $row['nombre_producto'] ?>>
 					
 				</div>
@@ -95,7 +95,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="precio" class="">Precio Total</label>
 						<input type="text" class="form-control" id="precio" name="precio"
-						  required='required' title="Escriba el precio total del producto" pattern="[0-9Ss$/ ]+"
+						  required='required' title="Escriba el precio total del producto" pattern="[0-9Ss$/. ]+"
 						  value=<?php echo $row['precio_total'] ?>>
 					
 				</div>
@@ -109,7 +109,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<label for="proveedor" class="">Proveedor</label>
 						<input type="text" class="form-control" id="proveedor" name="proveedor"
-				        required='required' title="Escriba el nombre del proveedor del producto" pattern="[a-zA-Z./- ]+"
+				        required='required' title="Escriba el nombre del proveedor del producto" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ./- ]+"
 				        value=<?php echo $row['proveedor'] ?>>
 					
 				</div>
@@ -126,7 +126,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-5">
                     <a href="../mostrarPro.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
-						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
+						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Actualizar</button>
 					</div>
 				</div>
 			</form>

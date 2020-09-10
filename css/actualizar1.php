@@ -77,7 +77,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="nombre" class="">Nombre del Producto</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"
-                          required='required' title="nombre del producto, solamente letras" pattern="[a-zA-Z ]+"
+                          required='required' title="nombre del producto, solamente letras" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+"
                           value=<?php echo $row
                         ['nombre_producto'] ?>>
                 </div>
@@ -88,7 +88,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="precioC" class="">Precio Compra</label>
                         <input type="text" class="form-control" id="precioC" name="precioC"
-                          required='required' title="Escriba el precio de compra del producto" pattern="[0-9Ss$/ ]+"
+                          required='required' title="Escriba el precio de compra del producto" pattern="[0-9Ss$/. ]+"
                           value=<?php echo $row
                         ['precio_compra'] ?>>
                    
@@ -97,7 +97,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="precioV" class="">Precio Venta</label>
                         <input type="text" class="form-control" id="precioV" name="precioV" 
-                          required='required' title="Escriba el precio de venta del producto" pattern="[0-9Ss$/ ]+" 
+                          required='required' title="Escriba el precio de venta del producto" pattern="[0-9Ss$/. ]+" 
                           value=<?php echo $row ['precio_venta'] ?>
                           required>
                     
@@ -105,7 +105,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <label for="stock" class="">Stock</label>
                         <input type="text" class="form-control" id="stock" name="stock"
-                          required='required' title="Escriba la cantidad de productos disponibles"  pattern="[A-Za-z0-9 ]+"
+                          required='required' title="Escriba la cantidad de productos disponibles"  pattern="[A-Za-z0-9/.- ]+"
                            value=<?php echo $row
                         ['stock'] ?> required>
                     
@@ -117,7 +117,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-5">
                     <a href="../mostrarPrec.php" class="btn btn-info"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> &nbsp;&nbsp; Regresar</a>
-						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Agregar</button>
+						<button type="submit" class="btn btn-primary"> <i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Actualizar</button>
                     </div>
                 </div>
             </form>
