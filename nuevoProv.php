@@ -105,13 +105,13 @@ include('link.php');
 				<div class="form-group">
 					<label for="nombre" class="">Nombre del Proveedor</label>
 						<input type="text" class="form-control" id="nombre" name="nombre"
-						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-Z./ ]+">
+						  required='required' title="nombre del proveedor,solamente letras de A Z" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ./ ]+">
 					
 				</div>
 				<div class="form-group">
 					<label for="direccion" class="">Dirección</label>
 						<input type="text" class="form-control" id="direccion" name="direccion"
-						  required='required' title="Escribe la dirección del proveedor" pattern="[A-Za-z0-9./- ]+">
+						  required='required' title="Escribe la dirección del proveedor" pattern="[A-Za-z0-9áéíóúÁÉÍÓÚñÑ./- ]+">
 					</div>
 				
 				<div class="form-group">
@@ -134,7 +134,7 @@ include('link.php');
 					<label for="producto" class="">Preducto/Servicio</label>
 						<input type="text" class="form-control" id="producto" name="producto"
 				        required='required' title="Escriba el producto que distribuye el proveedor"
-                        pattern="[a-zA-Z ]+">
+                        pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+">
 					
 				</div>
 				

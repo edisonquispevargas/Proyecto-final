@@ -106,7 +106,7 @@ include('link.php');
                 <div class="form-group">
                     <label for="nombre" class="">Nombres y Apellidos</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"
-                          required='required' title="Solamente letras de A Z" pattern="[a-zA-Z ]+">
+                          required='required' title="Solamente letras de A Z" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+">
                     
                 </div>
                 <div class="form-group">
